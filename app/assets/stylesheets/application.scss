@@ -20,8 +20,25 @@
 @import "components/navbar/index";
 @import "components/banner/index";
 @import "components/btns/index";
+@import "components/footer/index";
+@import "components/cities/index";
 
 body{
-  padding-bottom: 75px;
+
   font-family: 'Roboto', sans-serif !important;
+}
+
+
+// bootstrap override;
+
+.text-head{
+  color: #7868e6 !important;
+}
+.text-content{
+  font-weight: bold !important;
+  color: #7868e6 !important;
+}
+
+.fas{
+  color: #7868e6 !important;
 }

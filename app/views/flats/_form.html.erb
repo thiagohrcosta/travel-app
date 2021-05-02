@@ -1,9 +1,10 @@
 <%= simple_form_for(flat) do |f| %>
   <%= f.input :title %>
   <%= f.input :photo %>
+  <%= f.input :coverBox %>
   <%= f.input :description %>
   <%= f.input :city %>
-  <%= f.input :place %>
+  <%= f.input :place, label: 'Country' %>
   <%= f.input :price %>
   <%= f.submit %>
 <% end %>
