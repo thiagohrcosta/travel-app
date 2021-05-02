@@ -13,11 +13,13 @@
         <div class="carousel-item active">
           <% @flats.each do |flat| %>
             <% if flat.id == 1 %>
-              <img src="<%= flat.photo %>">
+              <img class="banner-img" src="<%= flat.photo %>">
               <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4">
-                  <%= link_to flat.title, flat_path(flat), class: "btn-display" %>
-                </h2>
+                <div class="bg-title">
+                  <h2 class="banner-city-title">
+                    <%= link_to flat.title, flat_path(flat), class: "btn-display" %>
+                  </h2>
+                </div>
               </div>
             <% end %>
           <% end %>
@@ -26,9 +28,9 @@
         <div class="carousel-item">
           <% @flats.each do |flat| %>
             <% if flat.id == 2 %>
-              <img src="<%= flat.photo %>">
+              <img class="banner-img" src="<%= flat.photo %>">
               <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4">
+                <h2 class="banner-city-title">
                   <%= link_to flat.title, flat_path(flat), class: "btn-display" %>
                   </h2>
               </div>

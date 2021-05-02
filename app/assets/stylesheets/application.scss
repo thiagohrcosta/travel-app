@@ -12,11 +12,16 @@
  *
  *= require_tree .
  *= require_self
+
+ font-family: 'Roboto', sans-serif;
+
  */
 @import "components/index";
 @import "components/navbar/index";
 @import "components/banner/index";
 @import "components/btns/index";
+
 body{
   padding-bottom: 75px;
+  font-family: 'Roboto', sans-serif !important;
 }
