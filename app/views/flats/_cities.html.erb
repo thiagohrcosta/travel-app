@@ -5,9 +5,12 @@
           <% @flats.each do |flat| %>
             <div class="city-box">
               <img class="img-menu" src="<%= flat.coverBox %>">
-              <p class="menu-title"><%= link_to flat.title, flat_path(flat) %></p>
-              <div class="">
-                <p class="menu-price">$ <%= flat.price %></p>
+              <p class="title-city"><%= link_to flat.title, flat_path(flat), class: "title-text" %></p>
+              <div class="price-position">
+                <p class="price-text">$ <%= flat.price %>,00</p>
+              </div>
+              <div>
+                <img class="flag" src="<%= flat.flag %>">
               </div>
             </div>
           <% end %>
