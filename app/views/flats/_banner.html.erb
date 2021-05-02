@@ -3,33 +3,42 @@
   <div class="col-lg-7 p-0">
 
     <div id="carouselCity" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
+<!--       <div class="carousel-indicators">
+
         <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselCity" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+      </div> -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <% @flats.each do |flat| %>
             <% if flat.id == 1 %>
               <img src="<%= flat.photo %>">
               <div class="carousel-caption d-none d-md-block">
-                <h2 class="display-4"><%= flat.title %></h2>
+                <h2 class="display-4">
+                  <%= link_to flat.title, flat_path(flat), class: "btn-display" %>
+                </h2>
               </div>
             <% end %>
           <% end %>
         </div>
+
         <div class="carousel-item">
-          <img src="https://res.cloudinary.com/dloadb2bx/image/upload/v1619963009/photo-1547448415-e9f5b28e570d_psqcus.jpg" class="d-block w-100" alt="...">
+          <% @flats.each do |flat| %>
+            <% if flat.id == 2 %>
+              <img src="<%= flat.photo %>">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="display-4">
+                  <%= link_to flat.title, flat_path(flat), class: "btn-display" %>
+                  </h2>
+              </div>
+            <% end %>
+          <% end %>
+
+<!--           <img src="https://res.cloudinary.com/dloadb2bx/image/upload/v1619963009/photo-1547448415-e9f5b28e570d_psqcus.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h2 class="display-4">Florence</h2>
-            </div>
-        </div>
-        <div class="carousel-item">
-          <img src="https://res.cloudinary.com/dloadb2bx/image/upload/v1619963040/photo-1523816572-a1a23d1a67b8_qsjhyi.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h2 class="display-4">Dubai</h2>
-            </div>
+            </div> -->
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselCity" data-bs-slide="prev">
