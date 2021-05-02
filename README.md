@@ -52,10 +52,6 @@ As user you can manipulate all **CRUD** operations like:
  - Edit a place
  - Delete a place;
 
-## Search for a place
-The user can also use the search field to search for a desired place.
-![enter image description here](https://res.cloudinary.com/dloadb2bx/image/upload/v1619914740/france5_kqk6ti.png
-
 ## Development routine
 
  **April 1**
