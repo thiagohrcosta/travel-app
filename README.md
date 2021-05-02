@@ -39,7 +39,7 @@ To display flats on index page was used CSS grid:
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 ```
-In this code was also used `position: relative` and `position:absolute` to show flag and price.
+In this code was also used `position: relative` and `position:absolute` to display flag and price.
 
 ## How to run this project
 Download or clone it. . Then run in the main folder the command `rails server`. If needed, run `bundle install` to check if all gems are correctly installed. Then open the project on `localhost:3000/flats`
